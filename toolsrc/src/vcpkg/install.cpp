@@ -17,6 +17,9 @@
 #include <vcpkg/remove.h>
 #include <vcpkg/vcpkglib.h>
 
+#include <stdio.h>
+#include <io.h>
+
 namespace vcpkg::Install
 {
     using namespace vcpkg;
@@ -629,10 +632,18 @@ namespace vcpkg::Install
     /// Run "install" command.
     /// </summary>
     ///
-    void perform_and_exit(const VcpkgCmdArguments& args, const VcpkgPaths& paths, Triplet default_triplet)
+    void perform_and_exit(const VcpkgCmdArguments& inArgs, const VcpkgPaths& paths, Triplet default_triplet)
     {
         // input sanitization
+        VcpkgCmdArguments args;
+        memcpy(&args, &inArgs, sizeof(VcpkgCmdArguments));
         const ParsedArguments options = args.parse_arguments(COMMAND_STRUCTURE);
+
+        if (args.command_arguments.size() == 1 && args.command_arguments[0] == "*")
+        {
+            args.command_arguments.pop_back();
+            get_all_port_names(args.command_arguments);
+        }
 
         const std::vector<FullPackageSpec> specs = Util::fmap(args.command_arguments, [&](auto&& arg) {
             return Input::check_and_get_full_package_spec(
@@ -804,5 +815,31 @@ namespace vcpkg::Install
             xunit_doc += xunit_result(result.spec, result.timing, result.build_result.code);
         }
         return xunit_doc;
+    }
+    
+    void get_all_port_names(std::vector<std::string>& args)
+    {
+        char szFindPath[MAX_PATH] = { 0 };
+        GetCurrentDirectory(MAX_PATH, szFindPath);
+        std::string inPath = szFindPath;
+        inPath += "\\ports\\*";
+
+        intptr_t handle;
+        struct _finddata_t fileinfo;
+        handle = _findfirst(inPath.c_str(),&fileinfo);
+        if (handle == -1)
+            return;
+
+        do
+        {
+            if ((fileinfo.attrib & _A_SUBDIR) && strcmp(fileinfo.name, ".") != 0 && strcmp(fileinfo.name, "..") != 0)
+            {
+                args.push_back(fileinfo.name);
+            }
+        } while (!_findnext(handle,&fileinfo));
+
+        _findclose(handle);
+
+        return;
     }
 }
