@@ -19,6 +19,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 if(VCPKG_TARGET_ARCHITECTURE STREQUAL "x86")
     set(UNICORN_PLATFORM "Win32")
 elseif(VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")

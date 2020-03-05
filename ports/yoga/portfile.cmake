@@ -11,6 +11,8 @@ vcpkg_from_github(
     PATCHES add-project-declaration.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
 )

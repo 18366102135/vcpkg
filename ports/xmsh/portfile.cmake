@@ -2,7 +2,7 @@ include(vcpkg_common_functions)
 
 vcpkg_find_acquire_program(PYTHON3)
 
-if (NOT VCPKG_TARGET_IS_WINDOWS)
+if (1)
     message("Building with a gcc version less than 7.1.0 is not supported.")
 else()
     message(FATAL_ERROR "xmsh only support Linux/OSX.")
@@ -15,6 +15,8 @@ vcpkg_from_github(
   SHA512 643c6c94956de9b6fae635b6528e8ba756f4a2bc38de71613c2dd8d47f4a043aee7b6e7fec1870b306be3bea9f5c0c81d1d343bfc27883b3fba986fbc5b15406
   HEAD_REF master
 )
+
+return()
 
 vcpkg_configure_cmake(
   SOURCE_PATH ${SOURCE_PATH}

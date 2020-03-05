@@ -26,6 +26,8 @@ vcpkg_build_msbuild(
     OPTIONS /VERBOSITY:Diagnostic /DETAILEDSUMMARY
 )
 
+return()
+
 #INCLUDE (named dll.hpp in source, and unrar.h in all rarlabs distributions)
 file(INSTALL ${SOURCE_PATH}/dll.hpp DESTINATION ${CURRENT_PACKAGES_DIR}/include RENAME unrar.h)
 

@@ -17,6 +17,8 @@ vcpkg_configure_cmake(
         -DUV_SKIP_HEADERS=ON
 )
 
+return()
+
 vcpkg_install_cmake()
 vcpkg_fixup_cmake_targets(CONFIG_PATH share/unofficial-libuv TARGET_PATH share/unofficial-libuv)
 vcpkg_copy_pdbs()

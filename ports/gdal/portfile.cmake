@@ -18,6 +18,8 @@ vcpkg_download_distfile(ARCHIVE
     SHA512 ${GDAL_PACKAGE_SUM}
 )
 
+return()
+
 # Extract source into architecture specific directory, because GDALs' nmake based build currently does not
 # support out of source builds.
 set(SOURCE_PATH_DEBUG   ${CURRENT_BUILDTREES_DIR}/src-${TARGET_TRIPLET}-debug/gdal-${GDAL_VERSION_STR})

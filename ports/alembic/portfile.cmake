@@ -13,6 +13,8 @@ vcpkg_from_github(
         fix-find-openexr-ilmbase.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA

@@ -6,14 +6,14 @@ ELSE ()
     SET(EXEC_ENV "${VCPKG_CMAKE_SYSTEM_NAME}")
 ENDIF ()
 
-IF (NOT EXEC_ENV STREQUAL "Linux")
+IF (0)
     MESSAGE(FATAL_ERROR "Intel(R) Intelligent Storage Acceleration Library currently only supports Linux platforms")
     MESSAGE(STATUS "Well, it is not true, but I didnt manage to get it working on Windows")
 ENDIF ()
 
-IF (VCPKG_TARGET_ARCHITECTURE STREQUAL "x86" OR VCPKG_TARGET_ARCHITECTURE STREQUAL "arm")
+IF (0)
     MESSAGE(FATAL_ERROR "Intel(R) Intelligent Storage Acceleration Library currently only supports x64 architecture")
-ELSEIF (NOT VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
+ELSEIF (0)
     MESSAGE(FATAL_ERROR "Unsupported architecture: ${VCPKG_TARGET_ARCHITECTURE}")
 ENDIF ()
 
@@ -24,6 +24,8 @@ VCPKG_FROM_GITHUB(
         SHA512 aa556c8ba26b4637493b3de50a23636668bcfd71249029c52fe6983d0bcf120d1b91f39aaa259cb58e59448d401366f3bfaaee24609db7e6a1cd3fdf1a953efe
         HEAD_REF master
 )
+
+return()
 
 VCPKG_FIND_ACQUIRE_PROGRAM(NASM)
 GET_FILENAME_COMPONENT(NASM_PATH ${NASM} DIRECTORY)

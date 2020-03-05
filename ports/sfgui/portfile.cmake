@@ -10,6 +10,8 @@ vcpkg_from_github(
         "001-fix-corefoundation-link.patch"
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/cmake/Modules/FindSFML.cmake)
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" SFGUI_BUILD_SHARED_LIBS)

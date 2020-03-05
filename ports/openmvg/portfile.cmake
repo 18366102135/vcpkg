@@ -13,6 +13,8 @@ vcpkg_from_github(
         fix-config-cmake.patch
 )
 
+return()
+
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     openmp OpenMVG_USE_OPENMP
     openmp ENABLE_OPENMP

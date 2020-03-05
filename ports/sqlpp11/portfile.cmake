@@ -9,6 +9,8 @@ vcpkg_from_github(
     PATCHES ddl2cpp_path.patch
 )
 
+return()
+
 # Use sqlpp11's own build process, skipping tests
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}

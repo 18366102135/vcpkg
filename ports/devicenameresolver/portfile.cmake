@@ -11,6 +11,8 @@ vcpkg_from_bitbucket(
     PATCHES add-string-headfile.patch
 )
 
+return()
+
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})
 
 vcpkg_configure_cmake(

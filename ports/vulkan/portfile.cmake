@@ -3,6 +3,8 @@
 # Other packages can depend on this package to declare a dependency on Vulkan.
 include(vcpkg_common_functions)
 
+return()
+
 message(STATUS "Querying VULKAN_SDK Enviroment variable")
 file(TO_CMAKE_PATH "$ENV{VULKAN_SDK}" VULKAN_DIR)
 set(VULKAN_INCLUDE "${VULKAN_DIR}/include/vulkan/")

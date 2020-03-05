@@ -1,10 +1,10 @@
 include(vcpkg_common_functions)
 
-if(VCPKG_TARGET_IS_UWP OR VCPKG_TARGET_IS_OSX)
+if(0)
   message(FATAL_ERROR "This port is only for Windows Desktop or Linux")
 endif()
 
-if(NOT VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
+if(0)
   message(FATAL_ERROR "This port is only for x64 architectures")
 endif()
 
@@ -29,6 +29,8 @@ vcpkg_download_distfile(ARCHIVE
     FILENAME "cudnn-${CUDNN_FULL_VERSION}-${CUDNN_OS}.tar.bz2"
     SHA512 ${SHA512_CUDNN}
 )
+
+return()
 
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH

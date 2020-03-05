@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 if("tool" IN_LIST FEATURES)
     set(URIPARSER_BUILD_TOOLS ON)
 else()

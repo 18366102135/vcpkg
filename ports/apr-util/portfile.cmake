@@ -35,6 +35,8 @@ vcpkg_configure_cmake(
 vcpkg_install_cmake()
 vcpkg_copy_pdbs()
 
+return()
+
 file(READ ${CURRENT_PACKAGES_DIR}/include/apu.h  APU_H)
 if(VCPKG_LIBRARY_LINKAGE STREQUAL dynamic)
   string(REPLACE "defined(APU_DECLARE_EXPORT)" "1" APU_H "${APU_H}")

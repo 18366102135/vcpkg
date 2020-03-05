@@ -7,6 +7,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 if (VCPKG_LIBRARY_LINKAGE STREQUAL dynamic)
     SET(PLIBSYS_STATIC OFF)
 else()

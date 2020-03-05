@@ -35,6 +35,8 @@ vcpkg_from_github(
         fix-VTKConfig-cmake.patch
 )
 
+return()
+
 # Remove the FindGLEW.cmake and FindPythonLibs.cmake that are distributed with VTK,
 # since they do not detect the debug libraries correctly.
 # The default files distributed with CMake (>= 3.9) should be superior by all means.

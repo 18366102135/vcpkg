@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 configure_file(
     ${CMAKE_CURRENT_LIST_DIR}/Config.cmake.in
     ${SOURCE_PATH}/builds/cmake/Config.cmake.in

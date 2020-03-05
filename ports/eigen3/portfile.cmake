@@ -24,6 +24,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug)
 
 file(READ "${CURRENT_PACKAGES_DIR}/share/eigen3/Eigen3Targets.cmake" EIGEN_TARGETS)

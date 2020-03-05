@@ -24,6 +24,8 @@ vcpkg_extract_source_archive_ex(
         ${CMAKE_CURRENT_LIST_DIR}/fix-extra.patch
 )
 
+return()
+
 set(CONFIGURE_OPTIONS "--disable-samples --disable-tests")
 
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic")

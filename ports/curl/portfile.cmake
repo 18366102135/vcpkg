@@ -76,6 +76,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 vcpkg_copy_pdbs()
 
 if ("tool" IN_LIST FEATURES)

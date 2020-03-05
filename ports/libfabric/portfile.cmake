@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if (VCPKG_CMAKE_SYSTEM_NAME)
+if (0)
     # The library supports Linux/Darwin/BSD, it is just not yet added here
     message(FATAL_ERROR "vcpkg libfabric currently suports windows.  Please consider a pull request to add additional support!")
 endif()
@@ -14,6 +14,8 @@ vcpkg_from_github(
     PATCHES
       add_additional_includes.patch
 )
+
+return()
 
 if(NOT VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
    message(FATAL_ERROR "VCPKG BUILD ERROR: libfabric only supports x64")

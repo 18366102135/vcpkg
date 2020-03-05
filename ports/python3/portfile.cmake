@@ -18,6 +18,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 if (VCPKG_TARGET_IS_WINDOWS)
 	set(SOURCE_PATH "${TEMP_SOURCE_PATH}-Lib-Win")
 	file(REMOVE_RECURSE ${SOURCE_PATH})

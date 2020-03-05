@@ -8,6 +8,8 @@ vcpkg_download_distfile(ARCHIVE
     SHA512 c83198794433ee6eb29f8740d59bd7056cd36808b4bff1a99563ab1a1742e6635dab4f2a8be33317f74d3b336f0d1adc28dd91410da056b50a08c215f184dce2
 )
 
+return()
+
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH
     ARCHIVE ${ARCHIVE}

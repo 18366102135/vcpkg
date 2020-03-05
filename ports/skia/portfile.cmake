@@ -8,6 +8,8 @@ vcpkg_from_git(
     REF 05676f7bc238f667de848dfd37b4aa3c01b69efb
 )
 
+return()
+
 find_program(GIT NAMES git git.cmd)
 set(ENV{GIT_EXECUTABLE} "${GIT}")
 

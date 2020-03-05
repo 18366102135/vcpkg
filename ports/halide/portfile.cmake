@@ -8,6 +8,8 @@ vcpkg_from_github(
         fix-install-path.patch
 )
 
+return()
+
 set(TARGET_X86 OFF)
 set(TARGET_ARM OFF)
 set(TARGET_AARCH64 OFF)

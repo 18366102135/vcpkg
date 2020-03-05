@@ -10,6 +10,8 @@ vcpkg_from_github(
       0001-enable-shared-build.patch
 )
 
+return()
+
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})
 file(COPY ${CURRENT_INSTALLED_DIR}/include/GL/glcorearb.h DESTINATION ${SOURCE_PATH}/include/GL)
 

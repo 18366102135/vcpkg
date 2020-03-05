@@ -9,6 +9,8 @@ vcpkg_from_github(ARCHIVE
   PATCHES "${CMAKE_CURRENT_LIST_DIR}/sfml-no-depend-libjpeg.patch"
 )
 
+return()
+
 file(REMOVE_RECURSE ${SOURCE_PATH}/extlibs)
 file(COPY ${CURRENT_INSTALLED_DIR}/include/Aurora DESTINATION ${SOURCE_PATH}/extlibs/aurora/include)
 file(WRITE "${SOURCE_PATH}/extlibs/aurora/License.txt")

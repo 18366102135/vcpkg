@@ -12,6 +12,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 vcpkg_from_github(
     OUT_SOURCE_PATH COMP_SOURCE_PATH
     REPO foonathan/compatibility

@@ -11,6 +11,8 @@ vcpkg_from_github(
         add-executor_type.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA # Disable this option if project cannot be built with Ninja

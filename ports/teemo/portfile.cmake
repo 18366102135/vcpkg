@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" TEEMO_STATIC)
 
 vcpkg_configure_cmake(

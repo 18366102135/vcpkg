@@ -20,6 +20,8 @@ vcpkg_from_github(
         fix_foundation_link.patch
 )
 
+return()
+
 # define Poco linkage type
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" POCO_STATIC)
 string(COMPARE EQUAL "${VCPKG_CRT_LINKAGE}" "static" POCO_MT)

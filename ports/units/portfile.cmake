@@ -7,6 +7,8 @@ vcpkg_from_github(
     SHA512 1b9d7806e82d0f437574562e647077b6d22c0add81a19b5ec71f53ab608642db2d785a70d03d13cb2eeea2a8bc2d20f112b6bdf49acf0afce44e8e07bb6b7c39
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA # Disable this option if project cannot be built with Ninja

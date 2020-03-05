@@ -10,6 +10,8 @@ vcpkg_from_github(
         0001-add-install-target.patch
 )
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL dynamic)
 	set(WANT_STATIC "OFF")
 else()

@@ -18,6 +18,8 @@ vcpkg_from_github(
         fix_find_package_sdl2.patch
 )
 
+return()
+
 file(REMOVE "${SOURCE_PATH}/CMake/Packages/FindOpenEXR.cmake")
 
 if (VCPKG_LIBRARY_LINKAGE STREQUAL static)

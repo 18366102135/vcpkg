@@ -26,6 +26,8 @@ vcpkg_install_cmake()
 vcpkg_copy_pdbs()
 vcpkg_fixup_cmake_targets()
 
+return()
+
 file(RENAME ${CURRENT_PACKAGES_DIR}/share/szip/data/COPYING ${CURRENT_PACKAGES_DIR}/share/szip/copyright)
 
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/share)

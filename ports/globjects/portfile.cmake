@@ -9,6 +9,8 @@ vcpkg_from_github(
     PATCHES system-install.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA

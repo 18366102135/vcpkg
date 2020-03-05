@@ -45,6 +45,8 @@ vcpkg_execute_required_process(
 )
 message(STATUS "Importing certstore done")
 
+return()
+
 # Configure and build
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}

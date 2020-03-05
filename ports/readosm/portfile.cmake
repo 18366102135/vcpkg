@@ -14,6 +14,8 @@ vcpkg_extract_source_archive_ex(
         fix-version-macro.patch
 )
 
+return()
+
 find_program(NMAKE nmake)
 
 set(LIBS_ALL_DBG "\"${CURRENT_INSTALLED_DIR}/debug/lib/expat.lib\" \"${CURRENT_INSTALLED_DIR}/debug/lib/zlibd.lib\"")

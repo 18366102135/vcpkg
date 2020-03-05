@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if (VCPKG_TARGET_ARCHITECTURE STREQUAL x86)
+if (0)
     message(FATAL_ERROR "the x-plane SDK cannot be built for the x86 architecture")
 endif()
 
@@ -9,6 +9,8 @@ vcpkg_download_distfile(ARCHIVE
     FILENAME XPSDK301.zip
     SHA512 3044d606039be8230f35a5992d322d4c009b4056f8fb17e929a9f5c2204c084e2c83ddad10801b21727645ec957c8942b83938f81256ec3778dbe75df525e62a
 )
+
+return()
 
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH

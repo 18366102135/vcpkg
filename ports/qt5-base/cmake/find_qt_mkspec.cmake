@@ -1,5 +1,6 @@
 function(find_qt_mkspec TARGET_PLATFORM_MKSPEC_OUT HOST_PLATFORM_MKSPEC_OUT EXT_HOST_TOOLS_OUT)
     ## Figure out QTs target mkspec
+    return()
     if(NOT DEFINED VCPKG_QT_TARGET_MKSPEC)
         message(STATUS "Figuring out qt target mkspec. Target arch ${VCPKG_TARGET_ARCHITECTURE}") 
         if(VCPKG_TARGET_IS_WINDOWS)    

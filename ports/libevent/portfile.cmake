@@ -11,6 +11,8 @@ vcpkg_from_github(
         fix-LibeventConfig_cmake_in_path.patch
 )
 
+return()
+
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     INVERTED_FEATURES
     openssl EVENT__DISABLE_OPENSSL

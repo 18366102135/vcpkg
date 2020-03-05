@@ -11,6 +11,8 @@ vcpkg_from_github(
         namespace_tinyxml2.patch 
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA

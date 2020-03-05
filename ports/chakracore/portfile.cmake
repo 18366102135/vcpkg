@@ -14,6 +14,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 find_path(COR_H_PATH cor.h)
 if(COR_H_PATH MATCHES "NOTFOUND")
     message(FATAL_ERROR "Could not find <cor.h>. Ensure the NETFXSDK is installed.")

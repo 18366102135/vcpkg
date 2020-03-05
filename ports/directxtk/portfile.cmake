@@ -12,6 +12,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 IF (TRIPLET_SYSTEM_ARCH MATCHES "x86")
     SET(BUILD_ARCH "Win32")
 ELSE()

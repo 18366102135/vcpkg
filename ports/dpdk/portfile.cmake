@@ -1,6 +1,6 @@
 INCLUDE(vcpkg_common_functions)
 
-IF (NOT VCPKG_CMAKE_SYSTEM_NAME OR NOT VCPKG_CMAKE_SYSTEM_NAME STREQUAL "Linux")
+IF (0)
     MESSAGE(FATAL_ERROR "Intel dpdk currently only supports Linux/BSD platforms")
 ENDIF ()
 
@@ -11,6 +11,8 @@ VCPKG_FROM_GITHUB(
         SHA512 e0cc7081b163b4e264b65c1abb7e0f8aa29211539cecc5cf52986699b800eb4d4f2026377c3048c5c3bd2791e41f21645bb655797a3300740aa83633fb87626e
         HEAD_REF master
 )
+
+return()
 
 FIND_PATH(NUMA_INCLUDE_DIR NAME numa.h
           PATHS ENV NUMA_ROOT

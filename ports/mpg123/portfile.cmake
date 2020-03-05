@@ -31,6 +31,8 @@ vcpkg_download_distfile(ARCHIVE
     SHA512 ${MPG123_HASH}
 )
 
+return()
+
 vcpkg_extract_source_archive_ex(
     ARCHIVE ${ARCHIVE}
     OUT_SOURCE_PATH SOURCE_PATH

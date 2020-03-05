@@ -15,9 +15,9 @@ vcpkg_from_github(
     REF dac1c7ed8e183e9c6de8b928c8b0294a7bd1d8ee # v2.0.2
     SHA512 4c6f6dcd793a50cbbc9c7f61c561ed4a747ded67e3dceb09792998c0f0d4294445a441fed668d59297560f196274b1c25593ce67b0aa7597cbb773328e8612c0
     HEAD_REF master
-    PATCHES
-        fix_dependency.patch
 )
+
+return()
 
 set(USE_WIN_WCHAR_T OFF)
 if(NOT VCPKG_CMAKE_SYSTEM_NAME OR VCPKG_CMAKE_SYSTEM_NAME STREQUAL "WindowsStore")

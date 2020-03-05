@@ -21,6 +21,8 @@ macro(download_msmpi_redistributable_package)
     )
 endmacro()
 
+return()
+
 ### Check for correct version of installed redistributable package
 
 # We always want the ProgramFiles folder even on a 64-bit machine (not the ProgramFilesx86 folder)

@@ -25,6 +25,8 @@ vcpkg_from_github(
         ${ADDITIONAL_PATCH}
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/cmake/FindGflags.cmake)
 file(REMOVE ${SOURCE_PATH}/cmake/FindGlog.cmake)
 #file(REMOVE ${SOURCE_PATH}/cmake/FindEigen.cmake)

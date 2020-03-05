@@ -10,6 +10,8 @@ vcpkg_from_github(
         fix-text2image.patch
 )
 
+return()
+
 # The built-in cmake FindICU is better
 file(REMOVE ${SOURCE_PATH}/cmake/FindICU.cmake)
 

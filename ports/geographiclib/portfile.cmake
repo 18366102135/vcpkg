@@ -5,6 +5,8 @@ vcpkg_download_distfile(ARCHIVE
     FILENAME "geographiclib-1.47-patch1.zip"
     SHA512 d8fdfd7ae093057ec1a4ab922457fe71a3fb9975df5b673c276d62a0e9c4f212dc63652830b9d89e3890bc96aafd335992943cf6a1bce8260acf932d1eb7abfd
 )
+
+return()
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH
     ARCHIVE ${ARCHIVE}

@@ -18,7 +18,7 @@ else(VCPKG_TARGET_IS_WINDOWS)
       SHA512 45ee6cf4302892ac9de305f8454109fa17a8b703187cc76555ce3641b621909e0cfedf3cc4a7fe1a8f01454637279cc9c4afe9d67466d5253e0ba1f34431d97f
   )
 endif()
-
+return()
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH
     ARCHIVE ${ARCHIVE}

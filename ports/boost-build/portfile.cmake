@@ -29,7 +29,7 @@ vcpkg_download_distfile(BOOSTCPP_ARCHIVE
     FILENAME "boost-${BOOST_VERSION}-boostcpp.jam"
     SHA512 7fac16c1f082821dd52cae39601f60bbdbd5ce043fbd19699da54c74fc5df1ed2ad6d3cefd3ae9a0a7697a2c34737f0c9e2b4bd3590c1f45364254875289cd17
 )
-
+return()
 file(INSTALL ${ARCHIVE} DESTINATION ${CURRENT_PACKAGES_DIR}/share/boost-build RENAME copyright)
 file(INSTALL ${BOOSTCPP_ARCHIVE} DESTINATION ${CURRENT_PACKAGES_DIR}/tools/boost-build RENAME boostcpp.jam)
 

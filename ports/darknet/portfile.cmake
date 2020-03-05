@@ -44,7 +44,7 @@ if ("cuda" IN_LIST FEATURES)
   endif()
 endif()
 
-if("weights" IN_LIST FEATURES)
+if(0)
   vcpkg_download_distfile(YOLOV3_WEIGHTS
     URLS "https://pjreddie.com/media/files/yolov3.weights"
     FILENAME "darknet-cache/yolov3.weights"
@@ -67,7 +67,7 @@ if("weights" IN_LIST FEATURES)
   )
 endif()
 
-if("weights-train" IN_LIST FEATURES)
+if(0)
   vcpkg_download_distfile(IMAGENET_CONV_WEIGHTS_V3
     URLS "https://pjreddie.com/media/files/darknet53.conv.74"
     FILENAME "darknet-cache/darknet53.conv.74"
@@ -79,6 +79,8 @@ if("weights-train" IN_LIST FEATURES)
     SHA512 8016f5b7ddc15c5d7dad231592f5351eea65f608ebdb204f545034dde904e11962f693080dfeb5a4510e7b71bdda151a9121ba0f8a243018d680f01b1efdbd31
   )
 endif()
+
+return()
 
 #make sure we don't use any integrated pre-built library nor any unnecessary CMake module
 file(REMOVE_RECURSE ${SOURCE_PATH}/3rdparty)

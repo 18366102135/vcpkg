@@ -15,6 +15,8 @@ vcpkg_from_github(
         find_blas.patch
 )
 
+return()
+
 file(REMOVE_RECURSE ${SOURCE_PATH}/dlib/external/libjpeg)
 file(REMOVE_RECURSE ${SOURCE_PATH}/dlib/external/libpng)
 file(REMOVE_RECURSE ${SOURCE_PATH}/dlib/external/zlib)

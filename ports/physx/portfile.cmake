@@ -92,6 +92,8 @@ vcpkg_from_github(
 		vs16_3_typeinfo_header_fix.patch
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/physx/buildtools/presets/public/${PRESET_FILE}.xml)
 configure_file(${CMAKE_CURRENT_LIST_DIR}/preset.xml.in ${SOURCE_PATH}/physx/buildtools/presets/public/${PRESET_FILE}.xml)
 

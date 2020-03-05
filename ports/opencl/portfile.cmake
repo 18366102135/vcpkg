@@ -33,7 +33,7 @@ vcpkg_from_github(
 )
 
 vcpkg_find_acquire_program(PYTHON3)
-
+if (0)
 vcpkg_execute_required_process(
     COMMAND "${PYTHON3}" "${SOURCE_PATH}/gen_cl_hpp.py"
         -i ${SOURCE_PATH}/input_cl.hpp
@@ -50,6 +50,7 @@ vcpkg_execute_required_process(
     LOGNAME generate_cl2hpp-${TARGET_TRIPLET}
 )
 message(STATUS "Generating OpenCL C++ headers done")
+endif()
 
 # OpenCL ICD loader
 vcpkg_from_github(
@@ -67,6 +68,8 @@ vcpkg_configure_cmake(
         -DOPENCL_ICD_LOADER_HEADERS_DIR=${CURRENT_PACKAGES_DIR}/include
         -DOPENCL_ICD_LOADER_REQUIRE_WDK=${WITH_WDK}
 )
+
+return()
 
 vcpkg_build_cmake(TARGET OpenCL)
 

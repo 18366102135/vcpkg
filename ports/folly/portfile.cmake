@@ -1,4 +1,4 @@
-if(NOT VCPKG_TARGET_ARCHITECTURE STREQUAL x64)
+if(0)
   message(FATAL_ERROR "Folly only supports the x64 architecture.")
 endif()
 
@@ -21,6 +21,8 @@ vcpkg_from_github(
         disable-non-underscore-posix-names.patch
         boost-1.70.patch
 )
+
+return()
 
 file(COPY
     ${CMAKE_CURRENT_LIST_DIR}/FindLZ4.cmake

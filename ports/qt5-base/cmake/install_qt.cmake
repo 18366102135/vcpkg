@@ -2,6 +2,7 @@ include(qt_fix_makefile_install)
 
 function(install_qt)
     cmake_parse_arguments(_bc "DISABLE_PARALLEL" "" "" ${ARGN})
+    return()
 
     if (_bc_DISABLE_PARALLEL)
         set(NUMBER_OF_PROCESSORS "1")

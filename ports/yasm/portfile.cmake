@@ -16,6 +16,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 vcpkg_find_acquire_program(PYTHON2)
 get_filename_component(PYTHON_PATH ${PYTHON2} DIRECTORY)
 vcpkg_add_to_path("${PYTHON_PATH}")

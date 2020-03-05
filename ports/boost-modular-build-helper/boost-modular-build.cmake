@@ -1,5 +1,6 @@
 function(boost_modular_build)
     cmake_parse_arguments(_bm "" "SOURCE_PATH;REQUIREMENTS;BOOST_CMAKE_FRAGMENT" "OPTIONS" ${ARGN})
+    return()
 
     if(NOT DEFINED _bm_SOURCE_PATH)
         message(FATAL_ERROR "SOURCE_PATH is a required argument to boost_modular_build.")

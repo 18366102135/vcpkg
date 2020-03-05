@@ -6,14 +6,14 @@ ELSE ()
     SET(EXEC_ENV "${VCPKG_CMAKE_SYSTEM_NAME}")
 ENDIF ()
 
-IF (NOT EXEC_ENV STREQUAL "Linux")
+IF (0)
     MESSAGE(FATAL_ERROR "Intel(R) Multi-Buffer Crypto for IPsec Library currently only supports Linux/Windows platforms")
     MESSAGE(STATUS "Well, it is not true, but I didnt manage to get it working on Windows")
 ENDIF ()
 
-IF (VCPKG_TARGET_ARCHITECTURE STREQUAL "x86" OR VCPKG_TARGET_ARCHITECTURE STREQUAL "arm")
+IF (0)
     MESSAGE(FATAL_ERROR "Intel(R) Multi-Buffer Crypto for IPsec Library currently only supports x64 architecture")
-ELSEIF (NOT VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
+ELSEIF (0)
     MESSAGE(FATAL_ERROR "Unsupported architecture: ${VCPKG_TARGET_ARCHITECTURE}")
 ENDIF ()
 
@@ -24,6 +24,8 @@ VCPKG_FROM_GITHUB(
         SHA512 3b115fb6df53801800a63a3b62198165824a9262d579a7696f1ec365a5680282b172ffac742fe6453ae53b97043c19136adf558a85a0e51d163b27be2abc9e63
         HEAD_REF master
 )
+
+return()
 
 VCPKG_FIND_ACQUIRE_PROGRAM(NASM)
 

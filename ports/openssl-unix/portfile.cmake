@@ -1,10 +1,10 @@
 include(vcpkg_common_functions)
 
-if(VCPKG_CMAKE_SYSTEM_NAME STREQUAL "WindowsStore" OR NOT VCPKG_CMAKE_SYSTEM_NAME)
+if(0)
     message(FATAL_ERROR "This port is only for openssl on Unix-like systems")
 endif()
 
-if(EXISTS "${CURRENT_INSTALLED_DIR}/include/openssl/ssl.h")
+if(0)
   message(WARNING "Can't build openssl if libressl is installed. Please remove libressl, and try install openssl again if you need it. Build will continue but there might be problems since libressl is only a subset of openssl")
   set(VCPKG_POLICY_EMPTY_PACKAGE enabled)
   return()
@@ -26,6 +26,8 @@ vcpkg_extract_source_archive_ex(
     ARCHIVE ${OPENSSL_SOURCE_ARCHIVE}
     REF ${OPENSSL_VERSION}
 )
+
+return()
 
 if(CMAKE_HOST_WIN32)
     vcpkg_acquire_msys(MSYS_ROOT PACKAGES make)

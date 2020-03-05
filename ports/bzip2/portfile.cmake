@@ -14,6 +14,8 @@ vcpkg_extract_source_archive_ex(
         fix-windows-include.patch
 )
 
+return()
+
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})
 
 vcpkg_configure_cmake(

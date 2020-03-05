@@ -16,6 +16,8 @@ vcpkg_configure_cmake(
 )
 
 vcpkg_install_cmake()
+
+return()
 file(INSTALL ${SOURCE_PATH}/LICENSE.rst DESTINATION ${CURRENT_PACKAGES_DIR}/share/fmt RENAME copyright)
 if(VCPKG_LIBRARY_LINKAGE STREQUAL dynamic)
     if(VCPKG_CMAKE_SYSTEM_NAME STREQUAL "WindowsStore" OR NOT VCPKG_CMAKE_SYSTEM_NAME)

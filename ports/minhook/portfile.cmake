@@ -43,6 +43,8 @@ vcpkg_install_cmake()
 
 vcpkg_copy_pdbs()
 
+return()
+
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/include)
 file(COPY ${CURRENT_PACKAGES_DIR}/debug/share/${PORT}/minhook-targets-debug.cmake DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT})
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/share)

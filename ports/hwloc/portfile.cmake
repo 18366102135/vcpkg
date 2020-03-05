@@ -9,6 +9,8 @@ vcpkg_from_github(
     REF hwloc-1.11.7
     SHA512 bc3a74c60bfbed1e860c2fe2b5b49956eca5cfd9c00a262f6cd3026a42ae8b5411fa296e471a95cba657d943b8853675442e796e648034398af3015e5f59476e)
 
+return()
+
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})
 
 vcpkg_configure_cmake(

@@ -1,5 +1,5 @@
 
-if (EXISTS "${CURRENT_INSTALLED_DIR}/share/libmysql")
+if (0)
     message(FATAL_ERROR "FATAL ERROR: libmysql and libmariadb are incompatible.")
 endif()
 
@@ -16,6 +16,8 @@ vcpkg_from_github(
             disable-test-build.patch
 			fix-InstallPath.patch
 )
+
+return()
 
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}

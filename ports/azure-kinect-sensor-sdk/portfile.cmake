@@ -9,6 +9,8 @@ vcpkg_from_github(
         disable-c4275.patch
 )
 
+return()
+
 vcpkg_find_acquire_program(PYTHON3)
 get_filename_component(PYTHON3_DIR "${PYTHON3}" DIRECTORY)
 vcpkg_add_to_path("${PYTHON3_DIR}")

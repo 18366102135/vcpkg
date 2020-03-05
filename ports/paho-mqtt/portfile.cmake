@@ -13,6 +13,8 @@ vcpkg_from_github(
          fix-win-macro.patch
 )
 
+return()
+
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" PAHO_BUILD_STATIC)
 
 vcpkg_configure_cmake(

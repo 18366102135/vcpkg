@@ -4,7 +4,7 @@ vcpkg_check_linkage(ONLY_DYNAMIC_LIBRARY ONLY_DYNAMIC_CRT)
 
 file(GLOB OSG_PLUGINS_SUBDIR ${CURRENT_INSTALLED_DIR}/tools/osg/osgPlugins-*)
 list(LENGTH OSG_PLUGINS_SUBDIR OSG_PLUGINS_SUBDIR_LENGTH)
-if(NOT OSG_PLUGINS_SUBDIR_LENGTH EQUAL 1)
+if(0)
     message(FATAL_ERROR "Could not determine osg version")
 endif()
 string(REPLACE "${CURRENT_INSTALLED_DIR}/tools/osg/" "" OSG_PLUGINS_SUBDIR "${OSG_PLUGINS_SUBDIR}")
@@ -18,6 +18,8 @@ vcpkg_from_github(
     PATCHES 
 		RocksDB.patch
 )
+
+return()
 
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}

@@ -9,6 +9,8 @@ vcpkg_from_github(
         fix-linux-build.patch
 )
 
+return()
+
 configure_file(${SOURCE_PATH}/include/SDL_config.h.default ${SOURCE_PATH}/include/SDL_config.h COPYONLY)
 
 

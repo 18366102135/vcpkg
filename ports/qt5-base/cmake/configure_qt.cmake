@@ -1,5 +1,6 @@
 function(configure_qt)
     cmake_parse_arguments(_csc "" "SOURCE_PATH;TARGET_PLATFORM;HOST_PLATFORM;HOST_TOOLS_ROOT" "OPTIONS;OPTIONS_DEBUG;OPTIONS_RELEASE" ${ARGN})
+    return()
 
     if(NOT _csc_TARGET_PLATFORM)
         message(FATAL_ERROR "configure_qt requires a TARGET_PLATFORM argument.")

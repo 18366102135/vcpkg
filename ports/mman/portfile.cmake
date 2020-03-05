@@ -10,6 +10,8 @@ vcpkg_from_github(
         mman-static.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA

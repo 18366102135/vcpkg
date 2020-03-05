@@ -14,6 +14,8 @@ vcpkg_from_github(
         0005-fix-libvpx-linking.patch
 )
 
+return()
+
 if (${SOURCE_PATH} MATCHES " ")
     message(FATAL_ERROR "Error: ffmpeg will not build with spaces in the path. Please use a directory with no spaces")
 endif()

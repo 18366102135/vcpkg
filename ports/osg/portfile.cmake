@@ -16,6 +16,8 @@ vcpkg_from_github(
         remove-prefix.patch # Remove this patch when cmake fix Findosg_functions.cmake
 )
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "static")
     set(OSG_DYNAMIC OFF)
 else()

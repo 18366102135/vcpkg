@@ -7,6 +7,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 vcpkg_find_acquire_program(PYTHON2)
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" KEYSTONE_BUILD_STATIC)

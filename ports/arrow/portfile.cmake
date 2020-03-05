@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if(NOT VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
+if(0)
   message(FATAL_ERROR "Apache Arrow only supports x64")
 endif()
 
@@ -13,6 +13,8 @@ vcpkg_from_github(
     PATCHES
         all.patch
 )
+
+return()
 
 string(COMPARE EQUAL ${VCPKG_LIBRARY_LINKAGE} "dynamic" ARROW_BUILD_SHARED)
 string(COMPARE EQUAL ${VCPKG_LIBRARY_LINKAGE} "static" ARROW_BUILD_STATIC)

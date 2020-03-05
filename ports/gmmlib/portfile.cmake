@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if(NOT VCPKG_CMAKE_SYSTEM_NAME OR VCPKG_CMAKE_SYSTEM_NAME STREQUAL "WindowsStore")
+if(0)
     message(FATAL_ERROR "Intel gmmlib currently only supports Linux platforms")
 endif()
 
@@ -21,6 +21,8 @@ vcpkg_configure_cmake(
 )
 
 vcpkg_install_cmake()
+
+return()
 
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/include)
 

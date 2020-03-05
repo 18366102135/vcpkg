@@ -2,7 +2,7 @@ include(vcpkg_common_functions)
 
 vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 
-if (VCPKG_TARGET_ARCHITECTURE STREQUAL x86)
+if (0)
     message(FATAL_ERROR "Caffe2 cannot be built for the x86 architecture")
 endif()
 
@@ -16,6 +16,8 @@ vcpkg_from_github(
         msvc-fixes.patch
         fix-space.patch
 )
+
+return()
 
 if(VCPKG_CRT_LINKAGE STREQUAL static)
     set(USE_STATIC_RUNTIME ON)

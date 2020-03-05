@@ -2,7 +2,7 @@ set(MODPLUG_HASH 5a39f5913d07ba3e61d8d5afdba00b70165da81d)
 
 include(vcpkg_common_functions)
 
-if (VCPKG_LIBRARY_LINKAGE STREQUAL static)
+
     vcpkg_from_github(ARCHIVE
         OUT_SOURCE_PATH SOURCE_PATH
         REPO Konstanty/libmodplug
@@ -13,7 +13,7 @@ if (VCPKG_LIBRARY_LINKAGE STREQUAL static)
             "002-detect_sinf.patch"
             "003-use-static-cast-for-ctype.patch"
     )
-else()
+
     vcpkg_from_github(ARCHIVE
         OUT_SOURCE_PATH SOURCE_PATH
         REPO Konstanty/libmodplug
@@ -23,7 +23,8 @@ else()
             "002-detect_sinf.patch"
             "003-use-static-cast-for-ctype.patch"
     )
-endif()
+
+return()
 
 vcpkg_configure_cmake(SOURCE_PATH ${SOURCE_PATH} PREFER_NINJA)
 

@@ -38,6 +38,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/share/doc
                     ${CURRENT_PACKAGES_DIR}/debug/share
                     ${CURRENT_PACKAGES_DIR}/debug/include

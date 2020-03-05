@@ -33,6 +33,8 @@ vcpkg_configure_cmake(
 )
 vcpkg_install_cmake()
 
+return()
+
 file(COPY ${CURRENT_PACKAGES_DIR}/wpilib/include/ntcore/ DESTINATION ${CURRENT_PACKAGES_DIR}/include)
 file(COPY ${CURRENT_PACKAGES_DIR}/wpilib/include/wpiutil/ DESTINATION ${CURRENT_PACKAGES_DIR}/include)
 if (NOT WITHOUT_ALLWPILIB)

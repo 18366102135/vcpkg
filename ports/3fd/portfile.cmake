@@ -27,6 +27,8 @@ vcpkg_from_github(
         "${CMAKE_CURRENT_LIST_DIR}/RapidXML.patch"
 )
 
+return()
+
 # Copy the sources to ensure a clean, out-of-source build
 file(REMOVE_RECURSE ${CURRENT_BUILDTREES_DIR}/${TARGET_TRIPLET}-all)
 file(MAKE_DIRECTORY ${CURRENT_BUILDTREES_DIR}/${TARGET_TRIPLET}-all)

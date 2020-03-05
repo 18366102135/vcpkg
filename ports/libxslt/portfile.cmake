@@ -11,6 +11,8 @@ vcpkg_from_github(
         0002-Fix-lzma.patch
 )
 
+return()
+
 if (VCPKG_TARGET_IS_WINDOWS)
     # Create some directories ourselves, because the makefile doesn't
     file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/bin)

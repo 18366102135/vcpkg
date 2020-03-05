@@ -43,6 +43,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 file(RENAME ${CURRENT_PACKAGES_DIR}/include/freetype2/freetype ${CURRENT_PACKAGES_DIR}/include/freetype)
 file(RENAME ${CURRENT_PACKAGES_DIR}/include/freetype2/ft2build.h ${CURRENT_PACKAGES_DIR}/include/ft2build.h)
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/include/freetype2)

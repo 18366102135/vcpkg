@@ -21,6 +21,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 if(EXISTS ${CURRENT_PACKAGES_DIR}/lib/cmake/akali)
     vcpkg_fixup_cmake_targets(CONFIG_PATH lib/cmake/akali)
 elseif(EXISTS ${CURRENT_PACKAGES_DIR}/share/akali)

@@ -33,6 +33,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 if(EXISTS "${CURRENT_PACKAGES_DIR}/cmake")
     vcpkg_fixup_cmake_targets(CONFIG_PATH cmake)
 elseif(EXISTS "${CURRENT_PACKAGES_DIR}/lib/cmake/SDL2")

@@ -28,6 +28,8 @@ vcpkg_download_distfile(CLANG_ARCHIVE
     SHA512 98e540222719716985e5d8439116e47469cb01201ea91d1da7e46cb6633da099688d9352c3b65e5c5f660cbbae353b3d79bb803fc66b3be663f2b04b1feed1c3
 )
 
+return()
+
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH CLANG_SOURCE_PATH
     ARCHIVE ${CLANG_ARCHIVE}

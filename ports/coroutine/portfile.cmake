@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if(${VCPKG_TARGET_ARCHITECTURE} MATCHES x86)
+if(0)
     message(FATAL_ERROR "This library doesn't support x86 arch. Please use x64 instead. If it is critical, create an issue at the repo: github.com/luncliff/coroutine")
 endif()
 
@@ -11,6 +11,8 @@ vcpkg_from_github(
     SHA512 517f1c1726e4adc36cd34379c545324c99861d7cb5ebd3cebe0b7132fe5b61969a00e405bc106bb8f089f37d3a7ca9b1bcdc665a5cd6dfcaaf6856be37bec5b0
     HEAD_REF        master
 )
+
+return()
 
 # package: 'ms-gsl'
 set(GSL_INCLUDE_DIR ${CURRENT_INSTALLED_DIR}/include

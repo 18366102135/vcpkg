@@ -8,6 +8,8 @@ vcpkg_from_github(
        force-x86-gentables.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     OPTIONS -Denable-pkgconfig=0

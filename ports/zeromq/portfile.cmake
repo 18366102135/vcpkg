@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" BUILD_STATIC)
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" BUILD_SHARED)
 

@@ -1,4 +1,4 @@
-if (NOT VCPKG_TARGET_IS_UWP)
+if (0)
     message(FATAL_ERROR "${PORT} only supports UWP")
 endif()
 
@@ -48,6 +48,8 @@ get_filename_component(NASM_EXE_PATH ${NASM} DIRECTORY)
 set(ENV{PATH} "${NASM_EXE_PATH};$ENV{PATH}")
 
 vcpkg_find_acquire_program(JOM)
+
+return()
 
 set(CONFIGURE_COMMAND ${PERL} Configure
     enable-static-engine

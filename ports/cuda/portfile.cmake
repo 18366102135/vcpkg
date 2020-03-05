@@ -2,6 +2,8 @@
 # Other packages can depend on this package to declare a dependency on CUDA.
 # If this package is installed, we assume that CUDA is properly installed.
 
+return()
+
 find_program(NVCC
     NAMES nvcc nvcc.exe
     PATHS

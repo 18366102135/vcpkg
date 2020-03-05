@@ -16,6 +16,8 @@ vcpkg_configure_cmake(
 vcpkg_install_cmake()
 vcpkg_copy_pdbs()
 
+return()
+
 if(EXISTS ${CURRENT_PACKAGES_DIR}/CMake)
     vcpkg_fixup_cmake_targets(CONFIG_PATH CMake TARGET_PATH share/console_bridge)
 else()

@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if(VCPKG_CMAKE_SYSTEM_NAME STREQUAL "WindowsStore" OR NOT VCPKG_CMAKE_SYSTEM_NAME)
+if(0)
   message(FATAL_ERROR "This port is only for openmpi on Unix-like systems")
 endif()
 
@@ -14,6 +14,8 @@ vcpkg_download_distfile(ARCHIVE
   FILENAME "openmpi-${OpenMPI_FULL_VERSION}.tar.gz"
   SHA512 760716974cb6b25ad820184622e1ee7926bc6fda87db6b574f76792bc1ca99522e52195866c14b7cb2df5a4981efdaf9f71d2c5533cc0e8e45c2c4b3b74cbacc
 )
+
+return()
 
 if(NOT DEFINED VCPKG_BUILD_TYPE OR VCPKG_BUILD_TYPE STREQUAL "release")
     list(APPEND BUILD_TYPES "release")

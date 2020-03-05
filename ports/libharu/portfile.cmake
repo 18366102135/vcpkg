@@ -23,6 +23,8 @@ vcpkg_from_github(
         ${DISABLETIFF}
 )
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic")
   set(VCPKG_BUILD_SHARED_LIBS ON)
   set(VCPKG_BUILD_STATIC_LIBS OFF)

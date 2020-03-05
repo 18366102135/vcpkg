@@ -12,6 +12,8 @@ vcpkg_from_github(
         find-jmp-bounds-arm64.patch
 )
 
+return()
+
 vcpkg_build_nmake(
     SOURCE_PATH ${SOURCE_PATH}
     PROJECT_SUBPATH "src"

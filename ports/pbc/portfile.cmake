@@ -2,7 +2,7 @@ vcpkg_fail_port_install(ON_ARCH "arm" "arm64" ON_TARGET "UWP")
 
 set(PBC_VERSION 0.5.14)
 
-if(VCPKG_CMAKE_SYSTEM_NAME)
+
     vcpkg_download_distfile(
         ARCHIVE
         URLS "https://crypto.stanford.edu/pbc/files/pbc-${PBC_VERSION}.tar.gz"
@@ -19,7 +19,7 @@ if(VCPKG_CMAKE_SYSTEM_NAME)
 
     vcpkg_find_acquire_program(BISON)
     vcpkg_find_acquire_program(FLEX)
-
+if (0)
     if(VCPKG_LIBRARY_LINKAGE STREQUAL "static")
         set(SHARED_STATIC --enable-static --disable-shared)
     else()
@@ -69,7 +69,7 @@ if(VCPKG_CMAKE_SYSTEM_NAME)
 
     file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/include ${CURRENT_PACKAGES_DIR}/debug/share ${CURRENT_PACKAGES_DIR}/share/info)
     file(INSTALL ${SOURCE_PATH}/COPYING DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT} RENAME copyright)
-else()
+endif()
     vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
     vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
@@ -79,7 +79,7 @@ else()
         HEAD_REF master
         PATCHES windows.patch
     )
-
+if(0)
     set(CMAKE_FIND_LIBRARY_PREFIXES "")
     set(CMAKE_FIND_LIBRARY_SUFFIXES "")
 

@@ -1,4 +1,4 @@
-if(NOT VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
+if(0)
     message(FATAL_ERROR "This port currently only supports x64 architecture")
 endif()
 
@@ -10,6 +10,8 @@ vcpkg_from_github(
     HEAD_REF master
 	PATCHES fix-static_build.patch
 )
+
+return()
 
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}

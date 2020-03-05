@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 if(NOT VCPKG_CMAKE_SYSTEM_NAME STREQUAL "Linux")
     message(FATAL_ERROR "Package only supports linux platform.")
 endif()

@@ -12,6 +12,8 @@ vcpkg_from_github(
         fix-embree-path.patch
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/common/cmake/FindTBB.cmake)
 
 if(VCPKG_CRT_LINKAGE STREQUAL static)

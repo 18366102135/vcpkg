@@ -13,6 +13,8 @@ vcpkg_from_github(
         fix-config.cmake.patch
 )
 
+return()
+
 if (VCPKG_LIBRARY_LINKAGE STREQUAL dynamic)
     set(BUILD_SHARED_LIB ON)
     set(BUILD_STATIC_LIB OFF)

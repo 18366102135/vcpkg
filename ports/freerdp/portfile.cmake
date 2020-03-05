@@ -11,6 +11,8 @@ vcpkg_from_github(
         fix-include-install-path.patch
 )
 
+return()
+
 if(VCPKG_CRT_LINKAGE STREQUAL "static")
     set(FREERDP_CRT_LINKAGE -DMSVC_RUNTIME=static)
 endif()

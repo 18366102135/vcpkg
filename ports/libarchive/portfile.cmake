@@ -14,6 +14,8 @@ vcpkg_from_github(
         fix-cpu-set.patch
 )
 
+return()
+
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     bzip2   ENABLE_BZip2
     libxml2 ENABLE_LIBXML2

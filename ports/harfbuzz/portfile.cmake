@@ -74,6 +74,8 @@ vcpkg_fixup_cmake_targets()
 
 vcpkg_copy_pdbs()
 
+return()
+
 if (HAVE_GLIB)
     # Propagate dependency on glib downstream
     file(READ "${CURRENT_PACKAGES_DIR}/share/harfbuzz/harfbuzzConfig.cmake" _contents)

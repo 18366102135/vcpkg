@@ -13,6 +13,8 @@ vcpkg_from_github(
         fix-includepath-error.patch # include path has one more ../
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/CMakeModules/FindGLEW.cmake)
 
 string(COMPARE EQUAL "${VCPKG_CRT_LINKAGE}" "static" MSVC_USE_STATIC_CRT)

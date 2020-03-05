@@ -10,6 +10,8 @@ vcpkg_from_github(
         no-symlinks-in-static-build.patch
 )
 
+
+return()
 set(DISABLE_ICU ON)
 if("icu" IN_LIST FEATURES)
     set(DISABLE_ICU OFF)

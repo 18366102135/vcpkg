@@ -11,6 +11,8 @@ vcpkg_download_distfile(ARCHIVE
     SHA512 ${LIBVPX_HASH}
 )
 
+return()
+
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH
     ARCHIVE ${ARCHIVE}

@@ -1,6 +1,8 @@
 vcpkg_check_linkage(ONLY_STATIC_LIBRARY) 
 
-if(NOT VCPKG_USE_HEAD_VERSION)
+return()
+
+if(0)
     # Live555 only makes the latest releases available for download on their site
     message(FATAL_ERROR "Live555 does not have persistent releases. Please re-run the installation with --head.")
 endif()

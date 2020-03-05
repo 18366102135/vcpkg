@@ -11,6 +11,8 @@ vcpkg_from_github(
         fix-arm-builds.patch
 )
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic")
     set(OPENAL_LIBTYPE "SHARED")
 else()

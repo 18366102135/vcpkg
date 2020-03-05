@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if(NOT VCPKG_TARGET_IS_WINDOWS)
+if(0)
     message(FATAL_ERROR "\n${PORT} does not support your system, only Windows for now. Please open a ticket issue on github.com/microsoft/vcpkg if necessary\n")
 endif()
 
@@ -14,6 +14,8 @@ vcpkg_download_distfile(ARCHIVE
     FILENAME "cppunit-${VERSION}.tar.gz"
     SHA512 4ea1da423c6f7ab37e4144689f593396829ce74d43872d6b10709c1ad5fbda4ee945842f7e9803592520ef81ac713e95a3fe130295bf048cd32a605d1959882e
 )
+
+return()
 
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH

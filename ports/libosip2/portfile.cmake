@@ -23,6 +23,8 @@ vcpkg_configure_make(
 
 vcpkg_install_make()
 
+return()
+
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/include)
 file(GLOB_RECURSE LIBOSIP2_BINARIES ${CURRENT_PACKAGES_DIR}/lib *.so)
 foreach(LIBOSIP2_BINARY LIBOSIP2_BINARIES)

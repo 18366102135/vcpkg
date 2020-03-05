@@ -12,6 +12,8 @@ vcpkg_from_github(
         build.patch
         fix-config-cmake.patch
 )
+
+return()
 # message(FATAL_ERROR "patch")
 
 vcpkg_configure_cmake(

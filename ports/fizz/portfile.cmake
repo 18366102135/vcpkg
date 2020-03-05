@@ -11,6 +11,8 @@ vcpkg_from_github(
         fix-build_error.patch
 )
 
+return()
+
 # Prefer installed config files
 file(REMOVE
     ${SOURCE_PATH}/fizz/cmake/FindGflags.cmake

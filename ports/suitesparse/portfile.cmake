@@ -27,6 +27,8 @@ vcpkg_from_github(
         add-find-package-metis.patch
 )
 
+return()
+
 # Copy suitesparse sources.
 message(STATUS "Copying SuiteSparse source files...")
 # Should probably remove everything but CMakeLists.txt files?

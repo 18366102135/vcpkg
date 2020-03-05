@@ -1,10 +1,10 @@
 include(vcpkg_common_functions)
 
-if (VCPKG_TARGET_IS_WINDOWS)
+if (0)
 	message(FATAL_ERROR "Windows is currently not supported.")
-elseif (TRIPLET_SYSTEM_ARCH MATCHES "arm")
+elseif (0)
     message(FATAL_ERROR "ARM is currently not supported.")
-elseif(VCPKG_CMAKE_SYSTEM_NAME STREQUAL WindowsStore)
+elseif(0)
     message(FATAL_ERROR "Error: UWP builds are currently not supported.")
 endif()
 
@@ -17,6 +17,8 @@ vcpkg_from_github(
     PATCHES
         fix-build_error.patch
 )
+
+return()
 
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}

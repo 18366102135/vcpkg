@@ -10,6 +10,8 @@ vcpkg_from_github(
         fix-cmake.patch
 )
 
+return()
+
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     asm         MI_SEE_ASM
     secure      MI_SECURE

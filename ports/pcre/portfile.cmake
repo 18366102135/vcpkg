@@ -41,6 +41,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 foreach(FILE ${CURRENT_PACKAGES_DIR}/include/pcre.h ${CURRENT_PACKAGES_DIR}/include/pcreposix.h)
     file(READ ${FILE} PCRE_H)
     if(VCPKG_LIBRARY_LINKAGE STREQUAL "static")

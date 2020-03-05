@@ -14,6 +14,8 @@ vcpkg_from_github(
         0001-fix-visual-studio.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA

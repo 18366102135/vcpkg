@@ -10,6 +10,8 @@ vcpkg_from_bitbucket(
         disable-install-pdb.patch
 )
 
+return()
+
 set(ENABLE_ASSEMBLY OFF)
 if (NOT VCPKG_CMAKE_SYSTEM_NAME OR VCPKG_CMAKE_SYSTEM_NAME STREQUAL "WindowsStore")
     vcpkg_find_acquire_program(NASM)

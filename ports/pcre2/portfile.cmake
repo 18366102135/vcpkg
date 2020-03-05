@@ -33,6 +33,7 @@ vcpkg_configure_cmake(
         -DPCRE2_BUILD_PCRE2GREP=OFF)
 
 vcpkg_install_cmake()
+return()
 
 file(READ ${CURRENT_PACKAGES_DIR}/include/pcre2.h PCRE2_H)
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "static")

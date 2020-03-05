@@ -20,6 +20,8 @@ vcpkg_fixup_cmake_targets(CONFIG_PATH lib/cmake/Catch2)
 
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug ${CURRENT_PACKAGES_DIR}/lib)
 
+return()
+
 if(NOT EXISTS ${CURRENT_PACKAGES_DIR}/include/catch2/catch.hpp)
     message(FATAL_ERROR "Main includes have moved. Please update the forwarder.")
 endif()

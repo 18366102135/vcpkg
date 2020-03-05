@@ -18,6 +18,8 @@ if(VCPKG_CMAKE_SYSTEM_NAME)
         SHA512 c735105db8b86db739fd915bf16064e6bc82d0565ad8858059e4e93f62c9d72d9a1c02a5ca9859b184346a8dc64fa714d4d61404cff1e405dc548cbd54d0a88e
     )
 
+    return()
+
     vcpkg_extract_source_archive_ex(
         OUT_SOURCE_PATH SOURCE_PATH
         ARCHIVE ${ARCHIVE}
@@ -81,6 +83,8 @@ else()
         HEAD_REF master
         PATCHES enable-runtimelibrary-toggle.patch
     )
+
+    return()
 
     if(VCPKG_PLATFORM_TOOLSET MATCHES "v141")
         set(MSVC_VERSION 15)

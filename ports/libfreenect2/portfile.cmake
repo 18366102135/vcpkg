@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 file(READ ${SOURCE_PATH}/cmake_modules/FindLibUSB.cmake FINDLIBUSB)
 string(REPLACE "(WIN32)"
                "(WIN32_DISABLE)" FINDLIBUSB "${FINDLIBUSB}")

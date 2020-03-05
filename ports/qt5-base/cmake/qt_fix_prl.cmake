@@ -1,4 +1,5 @@
 function(qt_fix_prl PACKAGE_DIR PRL_FILES)
+    return()
         file(TO_CMAKE_PATH "${PACKAGE_DIR}/lib" CMAKE_LIB_PATH)
         file(TO_CMAKE_PATH "${PACKAGE_DIR}/include" CMAKE_INCLUDE_PATH)
         foreach(PRL_FILE IN LISTS PRL_FILES)

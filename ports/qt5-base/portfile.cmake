@@ -250,7 +250,7 @@ endif()
 list(APPEND CORE_OPTIONS
     -nomake examples
     -nomake tests)
-
+if (0)
 if(QT_UPDATE_VERSION)
     SET(VCPKG_POLICY_EMPTY_PACKAGE enabled)
 else()
@@ -317,6 +317,7 @@ else()
     endif()
 
     qt_install_copyright(${SOURCE_PATH})
+endif()
 endif()
 #install scripts for other qt ports
 file(COPY

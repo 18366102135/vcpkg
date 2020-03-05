@@ -9,6 +9,8 @@ vcpkg_from_github(
     PATCHES disable_master_project.patch
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA

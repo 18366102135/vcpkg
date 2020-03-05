@@ -11,6 +11,8 @@ vcpkg_from_github(
         fix_minizip.patch
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/cmake-modules/FindZLIB.cmake)
 file(REMOVE_RECURSE ${SOURCE_PATH}/contrib/zlib ${SOURCE_PATH}/contrib/gtest ${SOURCE_PATH}/contrib/rapidjson)
 

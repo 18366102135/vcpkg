@@ -7,6 +7,8 @@ vcpkg_from_github(
     SHA512 2bbd056b488cd30faca26618389d8af84edc39ade9b705e147b676bf39eee65b40239d01c32c46dfc2a289d79e869ed1bb3c347365603dcaab2f69e34427441a
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}
     PREFER_NINJA)

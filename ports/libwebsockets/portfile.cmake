@@ -8,6 +8,8 @@ vcpkg_from_github(
         CMakeLists.patch
 )
 
+return()
+
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" LWS_WITH_STATIC)
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" LWS_WITH_SHARED)
 

@@ -12,6 +12,8 @@ vcpkg_from_github(
         "uwp-cflags.patch"
 )
 
+return()
+
 vcpkg_configure_make(
     SOURCE_PATH ${SOURCE_PATH}
     OPTIONS

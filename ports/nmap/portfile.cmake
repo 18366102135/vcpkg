@@ -7,6 +7,8 @@ vcpkg_download_distfile(ARCHIVE
     SHA512 084c148b022ff6550e269d976d0077f7932a10e2ef218236fe13aa3a70b4eb6506df03329868fc68cb3ce78e4360b200f5a7a491d3145028fed679ef1c9ecae5
 )
 
+return()
+
 if(VCPKG_TARGET_IS_WINDOWS)
     vcpkg_extract_source_archive_ex(
         OUT_SOURCE_PATH SOURCE_PATH

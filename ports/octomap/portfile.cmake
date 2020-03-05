@@ -23,6 +23,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/include)
 
 file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/tools/octomap)

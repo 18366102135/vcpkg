@@ -2,6 +2,8 @@
 # Other packages can depend on this package to declare a dependency on MKL.
 # If this package is installed, we assume that MKL is properly installed.
 
+return()
+
 set(VCPKG_POLICY_EMPTY_PACKAGE enabled)
 
 set(MKL_REQUIRED_VERSION "20180000")

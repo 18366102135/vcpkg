@@ -4,6 +4,7 @@ function(qt_fix_cmake PACKAGE_DIR_TO_FIX PORT_TO_FIX)
     vcpkg_find_acquire_program(PYTHON2)
     get_filename_component(PYTHON2_EXE_PATH ${PYTHON2} DIRECTORY)
     vcpkg_add_to_path("${PYTHON2_EXE_PATH}")
+    return()
 
     #Fix the cmake files if they exist
     if(EXISTS ${PACKAGE_DIR_TO_FIX}/lib/cmake)

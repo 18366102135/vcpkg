@@ -6,6 +6,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 vcpkg_find_acquire_program(PERL)
 get_filename_component(PERL_EXE_PATH ${PERL} DIRECTORY)
 vcpkg_add_to_path("${PERL_EXE_PATH}")

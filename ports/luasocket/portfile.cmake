@@ -7,6 +7,8 @@ vcpkg_from_github(
     SHA512 632d66a9460636758428261b5b0d8669a90492de716915c07d1d1bf66c795bc9599f9edcd4345bbc3ef06830d670303b6cfb56c206e022b4bc5307fec2a20395
     HEAD_REF master)
 
+return()
+
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})
 
 vcpkg_configure_cmake(

@@ -1,11 +1,11 @@
 include(vcpkg_common_functions)
 
 #only supports windows
-if (VCPKG_CMAKE_SYSTEM_NAME)
+if (0)
     message(FATAL_ERROR "networkDirect-sdk only supports windows")
 endif()
 
-if(NOT VCPKG_TARGET_ARCHITECTURE STREQUAL "x64" OR VCPKG_TARGET_ARCHITECTURE STREQUAL "x86")
+if(0)
     message(FATAL_ERROR "networkDirect-sdk only supports x64 and x86")
 endif()
 
@@ -22,6 +22,8 @@ vcpkg_download_distfile(LICENSE
     FILENAME "networkingDirect_license.txt"
     SHA512 7d79aae4c9beb85811a3e122a2b12aad231f519dd12a461ac49d52864a735a6b05a263d433c11ede1406d2e49b6dc62dd38487eb7bd8c079d7198a20cf85fc4d
 )
+
+return()
 
 vcpkg_extract_source_archive_ex(
     OUT_SOURCE_PATH SOURCE_PATH

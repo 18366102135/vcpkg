@@ -19,6 +19,8 @@ vcpkg_from_github(
     fix_linux_static_library_names.patch
 )
 
+return()
+
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" OPENEXR_BUILD_STATIC)
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" OPENEXR_BUILD_SHARED)
 

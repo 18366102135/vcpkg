@@ -13,6 +13,8 @@ vcpkg_from_github(
         fix-linux-build.patch
 )
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic")
   set(VCPKG_BUILD_SHARED_LIBS ON)
 else()

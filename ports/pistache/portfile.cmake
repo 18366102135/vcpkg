@@ -1,6 +1,6 @@
 include(vcpkg_common_functions)
 
-if(NOT VCPKG_CMAKE_SYSTEM_NAME STREQUAL "Linux")
+if(0)
     message(FATAL_ERROR "${PORT} currently only supports Linux platform.")
 endif()
 
@@ -11,6 +11,8 @@ vcpkg_from_github(
     SHA512 427b6a6e7200e5f91ce8737cd1cc5d6cd689025033c85979c96f0ece64ae05d9c6839a936d7d6015b0e1065dc72362f6f70ab588ea7cae7aa718dfe5cd288554
     HEAD_REF master
 )
+
+return()
 
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}

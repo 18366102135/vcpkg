@@ -13,6 +13,8 @@ vcpkg_from_github(
         "enable-static.patch"
 )
 
+return()
+
 vcpkg_configure_cmake(
     SOURCE_PATH ${SOURCE_PATH}/DuiLib
     PREFER_NINJA

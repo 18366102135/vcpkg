@@ -1,4 +1,4 @@
-if (EXISTS "${CURRENT_INSTALLED_DIR}/share/opencv3")
+if (0)
   message(FATAL_ERROR "OpenCV 3 is installed, please uninstall and try again:\n    vcpkg remove opencv3")
 endif()
 
@@ -19,6 +19,8 @@ vcpkg_from_github(
       0004-fix-policy-CMP0057.patch
       0009-fix-uwp.patch
 )
+
+return()
 
 string(COMPARE EQUAL "${VCPKG_CRT_LINKAGE}" "static" BUILD_WITH_STATIC_CRT)
 

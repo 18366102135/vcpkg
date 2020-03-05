@@ -10,6 +10,8 @@ vcpkg_from_github(
         uwp.patch
         mac-fix.patch
 )
+
+return()
 if(${TARGET_TRIPLET} STREQUAL "x64-windows-static") 
 # workaround for visual studio toolset regression LNK1201 (remove if solved)
 vcpkg_configure_cmake(

@@ -14,6 +14,8 @@ vcpkg_from_github(
 		Fix-Cmake_DIR.patch
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/CMake/FindOpenJPEG.cmake)
 
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic")

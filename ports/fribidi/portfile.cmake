@@ -9,6 +9,8 @@ vcpkg_from_github(
     PATCHES fix-win-static-suffix.patch
 )
 
+return()
+
 vcpkg_configure_meson(
     SOURCE_PATH ${SOURCE_PATH}
     OPTIONS

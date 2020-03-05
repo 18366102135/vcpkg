@@ -11,6 +11,8 @@ vcpkg_from_github(
         002-fix-crt-linkage.patch
 )
 
+return()
+
 if (VCPKG_LIBRARY_LINKAGE STREQUAL dynamic)
 	set (LJIT_STATIC "")
 else()

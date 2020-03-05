@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF devel2
 )
 
+return()
+
 file(REMOVE ${SOURCE_PATH}/common/cmake/FindTBB.cmake)
 
 if(VCPKG_CRT_LINKAGE STREQUAL static)

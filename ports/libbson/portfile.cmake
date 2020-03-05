@@ -7,6 +7,8 @@ vcpkg_from_github(
     PATCHES fix-uwp.patch
 )
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "static")
     set(ENABLE_STATIC ON)
 else()

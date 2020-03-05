@@ -14,6 +14,8 @@ vcpkg_from_github(
         remove-non-ascii-character.patch
 )
 
+return()
+
 # Build only the selected projects
 vcpkg_build_msbuild(
     PROJECT_PATH ${SOURCE_PATH}/src/PMDK.sln

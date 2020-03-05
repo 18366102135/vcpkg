@@ -7,6 +7,8 @@ vcpkg_from_github(
     PATCHES fix-win32-define.patch
 )
 
+return()
+
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" CELERO_COMPILE_DYNAMIC_LIBRARIES)
 
 vcpkg_configure_cmake(

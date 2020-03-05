@@ -21,6 +21,8 @@ vcpkg_from_github(
         re2_add_compile_flags.patch
 )
 
+return()
+
 file(REMOVE_RECURSE ${SOURCE_PATH}/include/boost_1_65_0)
 
 set(STACK_DIRECTION)

@@ -45,6 +45,8 @@ vcpkg_build_msbuild(
     PLATFORM ${BUILD_ARCH}
 )
 
+return()
+
 file(INSTALL
     ${SOURCE_PATH}/DirectXMesh/DirectXMesh.h
     ${SOURCE_PATH}/DirectXMesh/DirectXMesh.inl

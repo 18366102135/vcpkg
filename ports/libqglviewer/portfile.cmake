@@ -9,6 +9,8 @@ vcpkg_from_github(
         destdir.patch
 )
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "static")
     set(OPTIONS CONFIG*=staticlib)
 endif()

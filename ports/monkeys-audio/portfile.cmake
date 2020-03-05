@@ -1,5 +1,7 @@
 vcpkg_fail_port_install(ON_TARGET "UWP" "OSX" "Linux")
 
+return()
+
 vcpkg_check_linkage(ONLY_DYNAMIC_LIBRARY ONLY_DYNAMIC_CRT)
 
 set(MA_VERSION 514)

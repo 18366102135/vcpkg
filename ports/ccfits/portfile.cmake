@@ -21,6 +21,8 @@ vcpkg_configure_cmake(
 
 vcpkg_install_cmake()
 
+return()
+
 if(VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic")
     file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/bin)
     file(MAKE_DIRECTORY ${CURRENT_PACKAGES_DIR}/debug/bin)

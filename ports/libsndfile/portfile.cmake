@@ -12,6 +12,8 @@ vcpkg_from_github(
         fix-install-path.patch
 )
 
+return()
+
 string(COMPARE EQUAL "${VCPKG_CRT_LINKAGE}" "static" CRT_LIB_STATIC)
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" BUILD_STATIC)
 

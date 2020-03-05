@@ -11,6 +11,8 @@ vcpkg_from_github(
     HEAD_REF next
 )
 
+return()
+
 set(OPENMAMA_TARGET_ARCH ${TRIPLET_SYSTEM_ARCH})
 if(${TRIPLET_SYSTEM_ARCH} STREQUAL x64)
     set(OPENMAMA_TARGET_ARCH x86_64)

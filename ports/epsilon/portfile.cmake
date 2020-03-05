@@ -5,6 +5,8 @@ vcpkg_download_distfile(ARCHIVE
     FILENAME "epsilon-0.9.2.tar.gz"
     SHA512 95f427c68a4a4eb784f7d484d87fc573133983510f6b030663f88955e2446490a07b1343ae4668251b466f67cf9a79bd834b933c57c5ed12327f32174f20ac0f)
 
+return()
+
 # Extract source into archictecture specific directory, because GDALs' nmake based build currently does not
 # support out of source builds.
 set(SOURCE_PATH_DEBUG   ${CURRENT_BUILDTREES_DIR}/src-${TARGET_TRIPLET}-debug/epsilon-0.9.2)

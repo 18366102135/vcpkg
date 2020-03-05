@@ -11,6 +11,8 @@ vcpkg_from_github(
         fix-msvc-build.patch # Remove this patch on next update
 )
 
+return()
+
 if(CMAKE_HOST_WIN32)
     vcpkg_find_acquire_program(JOM)
     set(build_tool "${JOM}")

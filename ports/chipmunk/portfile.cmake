@@ -1,7 +1,7 @@
 include(vcpkg_common_functions)
 
 #architecture detection
-if(VCPKG_TARGET_ARCHITECTURE STREQUAL "x86")
+if(1)
    set(CHIPMUNK_ARCH Win32)
 elseif(VCPKG_TARGET_ARCHITECTURE STREQUAL "x64")
    set(CHIPMUNK_ARCH x64)
@@ -27,6 +27,8 @@ vcpkg_from_github(
     SHA512 9094017755e9c140aa5bf8a1b5502077ae4fb2b0a3e12f1114e86d8591a6188f89822ecc578a2b5e95f61c555018f1b3273fe50e833fe2daf30e94b180a3d07c
     HEAD_REF master
 )
+
+return()
 
 vcpkg_build_msbuild(
     PROJECT_PATH ${SOURCE_PATH}/msvc/VS2015/chipmunk/chipmunk.vcxproj

@@ -40,6 +40,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 # Clean up previous builds
 file(REMOVE_RECURSE ${CURRENT_BUILDTREES_DIR}/${TARGET_TRIPLET}-rel
                     ${CURRENT_BUILDTREES_DIR}/${TARGET_TRIPLET}-dbg)

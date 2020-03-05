@@ -64,6 +64,7 @@ vcpkg_extract_source_archive_ex(
     PATCHES ${PATCHES}
 
 )
+return()
 unset(buildenv_contents)
 # Get paths to required programs
 foreach(program_name BISON FLEX PERL)

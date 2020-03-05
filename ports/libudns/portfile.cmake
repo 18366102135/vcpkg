@@ -8,6 +8,8 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+return()
+
 vcpkg_configure_make(
     SOURCE_PATH ${SOURCE_PATH}
     DISABLE_AUTO_DST

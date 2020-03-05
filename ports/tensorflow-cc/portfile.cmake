@@ -2,7 +2,7 @@ include(vcpkg_common_functions)
 
 message(WARNING "This tensorflow port currently is experimental on Windows and Linux platforms.")
 
-if (VCPKG_TARGET_ARCHITECTURE STREQUAL x86)
+if (0)
     message(FATAL_ERROR "TensorFlow does not support 32bit system.")
 endif()
 
@@ -16,6 +16,8 @@ vcpkg_from_github(
         file-exists.patch # required or otherwise it cant find python lib path on windows
         fix-build-error.patch # Fix namespace error
 )
+
+return()
 
 # due to https://github.com/bazelbuild/bazel/issues/8028, bazel must be version 25.0 or higher
 vcpkg_find_acquire_program(BAZEL)

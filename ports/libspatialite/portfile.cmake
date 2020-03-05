@@ -6,6 +6,8 @@ vcpkg_download_distfile(ARCHIVE
     SHA512 adfd63e8dde0f370b07e4e7bb557647d2bfb5549205b60bdcaaca69ff81298a3d885e7c1ca515ef56dd0aca152ae940df8b5dbcb65bb61ae0a9337499895c3c0
 )
 
+return()
+
 if (VCPKG_TARGET_IS_WINDOWS)
     find_program(NMAKE nmake)
 

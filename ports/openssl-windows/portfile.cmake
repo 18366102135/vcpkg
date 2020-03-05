@@ -30,6 +30,8 @@ set(ENV{PATH} "${NASM_EXE_PATH};$ENV{PATH}")
 
 vcpkg_find_acquire_program(JOM)
 
+return()
+
 set(OPENSSL_SHARED no-shared)
 if(VCPKG_LIBRARY_LINKAGE STREQUAL dynamic)
   set(OPENSSL_SHARED shared)

@@ -11,6 +11,8 @@ vcpkg_from_github(
         ${CMAKE_CURRENT_LIST_DIR}/fmt-fix.patch
 )
 
+return()
+
 vcpkg_find_acquire_program(PYTHON2)
 get_filename_component(PYTHON2_DIR ${PYTHON2} DIRECTORY)
 set(ENV{PATH} "$ENV{PATH};${PYTHON2_DIR}")

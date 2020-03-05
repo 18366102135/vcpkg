@@ -11,6 +11,8 @@ vcpkg_from_github(
         Fix-FindCairo.patch
 )
 
+return()
+
 if (VCPKG_CMAKE_SYSTEM_NAME STREQUAL Darwin)
     set(IO2D_DEFAULT_OPTION "-DIO2D_DEFAULT=COREGRAPHICS_MAC")
 endif()
