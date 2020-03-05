@@ -39,6 +39,7 @@
 ## * [nlohmann-json](https://github.com/Microsoft/vcpkg/blob/master/ports/nlohmann-json/portfile.cmake)
 function(vcpkg_fixup_cmake_targets)
     cmake_parse_arguments(_vfct "" "CONFIG_PATH;TARGET_PATH" "" ${ARGN})
+    return()
 
     if(_vfct_UNPARSED_ARGUMENTS)
         message(FATAL_ERROR "vcpkg_fixup_cmake_targets was passed extra arguments: ${_vfct_UNPARSED_ARGUMENTS}")

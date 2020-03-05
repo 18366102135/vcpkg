@@ -17,6 +17,7 @@
 
 function(vcpkg_configure_qmake)
     cmake_parse_arguments(_csc "" "SOURCE_PATH" "OPTIONS;OPTIONS_RELEASE;OPTIONS_DEBUG;BUILD_OPTIONS;BUILD_OPTIONS_RELEASE;BUILD_OPTIONS_DEBUG" ${ARGN})
+    return()
      
     # Find qmake executable
     set(_triplet_hostbindir ${CURRENT_INSTALLED_DIR}/tools/qt5/bin)

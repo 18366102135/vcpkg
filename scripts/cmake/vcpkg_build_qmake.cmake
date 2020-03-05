@@ -9,6 +9,7 @@
 
 function(vcpkg_build_qmake)
     cmake_parse_arguments(_csc "SKIP_MAKEFILES" "BUILD_LOGNAME" "TARGETS;RELEASE_TARGETS;DEBUG_TARGETS" ${ARGN})
+    return()
 
     if(CMAKE_HOST_WIN32)
         vcpkg_find_acquire_program(JOM)

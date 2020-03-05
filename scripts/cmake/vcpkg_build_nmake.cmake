@@ -77,6 +77,7 @@ function(vcpkg_build_nmake)
         "OPTIONS;OPTIONS_RELEASE;OPTIONS_DEBUG;PRERUN_SHELL;PRERUN_SHELL_DEBUG;PRERUN_SHELL_RELEASE"
         ${ARGN}
     )
+    return()
     
     if (NOT CMAKE_HOST_WIN32)
         message(FATAL_ERROR "vcpkg_build_nmake only support windows.")
