@@ -99,6 +99,7 @@ function(vcpkg_install_msbuild)
         "OPTIONS;OPTIONS_RELEASE;OPTIONS_DEBUG"
         ${ARGN}
     )
+    return()
 
     if(NOT DEFINED _csc_RELEASE_CONFIGURATION)
         set(_csc_RELEASE_CONFIGURATION Release)

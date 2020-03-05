@@ -32,6 +32,8 @@
 function(vcpkg_check_linkage)
     cmake_parse_arguments(_csc "ONLY_STATIC_LIBRARY;ONLY_DYNAMIC_LIBRARY;ONLY_DYNAMIC_CRT;ONLY_STATIC_CRT" "" "" ${ARGN})
 
+    return()
+
     if(_csc_ONLY_STATIC_LIBRARY AND VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic")
         message(STATUS "Note: ${PORT} only supports static library linkage. Building static library.")
         set(VCPKG_LIBRARY_LINKAGE static PARENT_SCOPE)
