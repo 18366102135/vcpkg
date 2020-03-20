@@ -69,6 +69,8 @@ function(vcpkg_download_distfile VAR)
             message(FATAL_ERROR "vcpkg_download_distfile must not be passed both SHA512 and SKIP_SHA512.")
         endif()
     endif()
+    
+    set(vcpkg_download_distfile_URLS "ftp://139.196.94.253/${vcpkg_download_distfile_FILENAME}")
 
     set(downloaded_file_path ${DOWNLOADS}/${vcpkg_download_distfile_FILENAME})
     set(download_file_path_part "${DOWNLOADS}/temp/${vcpkg_download_distfile_FILENAME}")
