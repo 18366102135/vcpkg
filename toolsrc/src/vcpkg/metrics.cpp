@@ -309,7 +309,7 @@ namespace vcpkg::Metrics
     {
 #if !defined(_WIN32)
         Util::unused(payload);
-#else
+#elif !defined(USE_FTP)
         HINTERNET connect = nullptr, request = nullptr;
         BOOL results = FALSE;
 

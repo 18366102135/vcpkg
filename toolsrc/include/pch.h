@@ -14,7 +14,11 @@
 
 #include <process.h>
 #include <shellapi.h>
+#ifdef USE_FTP
+#include <wininet.h>
+#else
 #include <winhttp.h>
+#endif
 #else
 #include <unistd.h>
 #endif
